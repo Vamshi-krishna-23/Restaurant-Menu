@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant Menu</title>
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Our Menu</h1>
+    <div class="btn-container">
+      <button class="filter-btn" onclick="filterMenu('all')">All</button>
+      <button class="filter-btn" onclick="filterMenu('breakfast')">Breakfast</button>
+      <button class="filter-btn" onclick="filterMenu('lunch')">Lunch</button>
+      <button class="filter-btn" onclick="filterMenu('dinner')">Dinner</button>
+    </div>
+
+    <div class="menu-container" id="menu">
+      <!-- Menu Items -->
+      <div class="menu-item" data-category="breakfast">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.W9jyztCbk6km1CJjK2-oVAHaE8&pid=Api&P=0&h=180" alt="cakes" class="menu-img" />
+        <div class="menu-info">
+          <h4>Cakes - $5.99</h4>
+          <p>Fluffy pancakes with syrup and butter.</p>
+        </div>
+      </div>
+
+      <div class="menu-item" data-category="lunch">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.9vOj25uyE-Aj7RUw1WM2xgHaE8&pid=Api&P=0&h=180" alt="Burger" class="menu-img" />
+        <div class="menu-info">
+          <h4>Burger - $8.99</h4>
+          <p>Juicy grilled burger with cheese.</p>
+        </div>
+      </div>
+
+      <div class="menu-item" data-category="dinner">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.pECNB_rc-UyD2SWAXm_SbwHaE8&pid=Api&P=0&h=180" alt="Steak" class="menu-img" />
+        <div class="menu-info">
+          <h4>Indian Dinner - $14.99</h4>
+          <p>Grilled steak with veggies and mashed potatoes.</p>
+        </div>
+      </div>
+
+      <div class="menu-item" data-category="breakfast">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.smJdALq5kPb0wh9vOC57FgHaE8&pid=Api&P=0&h=180" alt="Omelette" class="menu-img" />
+        <div class="menu-info">
+          <h4>Omelette - $4.99</h4>
+          <p>Egg omelette with cheese and vegetables.</p>
+        </div>
+      </div>
+
+      <div class="menu-item" data-category="lunch">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.dEyEvqfGH62TNJfiOrLy2gHaE8&pid=Api&P=0&h=180" alt="Chicken Sandwich" class="menu-img" />
+        <div class="menu-info">
+          <h4>Chicken Sandwich - $7.99</h4>
+          <p>Crispy chicken sandwich with mayonnaise.</p>
+        </div>
+      </div>
+
+      <div class="menu-item" data-category="dinner">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.-Ei0NCm3I0gLSDUA16sj4AHaE8&pid=Api&P=0&h=180" alt="Pasta" class="menu-img" />
+        <div class="menu-info">
+          <h4>Pasta - $11.99</h4>
+          <p>Creamy pasta with cheese and herbs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="Script.js"></script>
+</body>
+</html>
